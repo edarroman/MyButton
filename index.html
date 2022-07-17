@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Look at my button!</title>
+  </head>
+  <body>
+	<h3> Please look at it! </h3>
+    <button id="myButton" onclick="changeText()">My Button</button>
+	<script>
+		function changeText() {
+			var elem = document.getElementById("myButton");
+			if (elem.innerHTML=="My Button") elem.innerHTML = "You clicked on it!";
+			else elem.innerHTML = "My Button";
+		}
+	</script>
+  </body>
+</html>

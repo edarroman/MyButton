@@ -1,0 +1,12 @@
+{
+    "testEnvironment": "jsdom",
+    "dependencies": {
+        "testing-library": "^0.0.2"
+    },
+    "devDependencies": {
+        "@testing-library/dom": "^8.16.0",
+        "@testing-library/jest-dom": "^5.16.4",
+        "global-jsdom": "^8.5.0",
+        "jsdom": "^20.0.0"
+    }
+}
