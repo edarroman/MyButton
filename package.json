@@ -1,5 +1,8 @@
 {
-    "testEnvironment": "jest-environment-jsdom",
+    "scripts": {
+     "test": "jest"
+	},
+	"testEnvironment": "jest-environment-jsdom",
     "dependencies": {
         "testing-library": "^0.0.2"
     },
@@ -13,3 +16,4 @@
         "jsdom": "^20.0.0"
     }
 }
+
