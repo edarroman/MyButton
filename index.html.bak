@@ -4,7 +4,7 @@
     <title>Look at my button!</title>
   </head>
   <body>
-	<h3> Please look at it! Please! </h3>
+	<h3> Please look at it! </h3>
     <button id="myButton" onclick="changeText()">My Button</button>
 	<script>
 		function changeText() {
