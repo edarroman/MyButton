@@ -8,7 +8,6 @@ jobs:
       - checkout
       - run: npm install --save-dev jest
       - run: npm install --save-dev babel-jest @babel/core @babel/preset-env
-      - run: jest --clearCache
       - run:
           name: Run tests
           command: npm run test
