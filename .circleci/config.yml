@@ -1,33 +1,8 @@
-version: 2.1
-
-jobs:
-  build:
-    docker:
-      - image: circleci/node:10.1.0
-
-    steps:
-      - checkout
-
-      - restore_cache:
-          name: Restore Caches
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
-
-      - run: 
-          name: NPM Install
-          command: 
-            sudo npm install
-            sudo npm install pm2 -g
-            sudo pm2 update
-            sudo npm install node
-
-      - save_cache:
-          name: Save cache
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-
-      - run: 
-          name: Test
-          command: npm run test
+version: '2.1'
+orbs:
+  node: circleci/node@x.y
+workflows:
+  run-npm-command:
+    jobs:
+      - node/run:
+          npm-run: build
