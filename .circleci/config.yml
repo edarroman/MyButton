@@ -25,5 +25,5 @@ jobs:
           name: Test Jest
           command: "jest -v" 
       - run:
-          name: Run
+          name: Hello
           command: "npm run test"
