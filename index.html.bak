@@ -14,7 +14,7 @@
 	<script>
 		function newText() {
 			const btn = document.getElementById('myButton');
-			btn.style.display = 'none';
+			btn.style.display = 'block';
 			const p = document.createElement('p');
 			p.innerHTML = "You scared it!"
 			document.querySelector('#newtext').prepend(p);

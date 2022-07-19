@@ -29,7 +29,7 @@ describe('index.html', () => {
     
     fireEvent.click(button)
     let generatedText = container.querySelectorAll('#newtext p')
-    expect(generatedText.length).toBe(1)
+    expect(getByText(generatedText, 'You scared it!')).toBeInTheDocument()
 	
   })
 })
