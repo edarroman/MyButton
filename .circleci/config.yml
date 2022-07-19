@@ -17,9 +17,9 @@ jobs:
       - run: 
           name: NPM Install
           command: 
-            npm install
-            npm install pm2 -g
-            pm2 update
+            sudo npm install
+            sudo npm install pm2 -g
+            sudo pm2 update
 
       - save_cache:
           name: Save cache
