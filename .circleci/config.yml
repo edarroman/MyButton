@@ -16,7 +16,10 @@ jobs:
 
       - run: 
           name: NPM Install
-          command: sudo npm install -g jest
+          command: 
+            npm install
+            npm install pm2 -g
+            pm2 update
 
       - save_cache:
           name: Save cache
