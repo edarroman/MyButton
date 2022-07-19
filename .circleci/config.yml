@@ -16,7 +16,7 @@ jobs:
 
       - run: 
           name: NPM Install
-          command: npm install
+          command: npm install -g jest
 
       - save_cache:
           name: Save cache
