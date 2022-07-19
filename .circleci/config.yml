@@ -19,5 +19,11 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Run tests
-          command: npm run test
+          name: Install Jest
+          command: "sudo npm install --save-dev jest"
+      - run:
+          name: Test Jest
+          command: "jest -v" 
+      - run:
+          name: Run
+          command: "npm run test"
