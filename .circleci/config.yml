@@ -1,14 +1,11 @@
 version: 2.1
 jobs:
   build:
-    working_directory: ~/repo
     docker:
-      - image: circleci/node:10.16.3
+      - image: circleci/node:6
     steps:
       - checkout
-      - run: 
-          name: Install jest
-          command: npm install --save-dev jest
+      - run: npm install --save-dev jest
       - run:
           name: Run tests
           command: npm run test
