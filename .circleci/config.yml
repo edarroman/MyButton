@@ -4,13 +4,11 @@ jobs:
       - image: cimg/node:16.16.0
     steps:
       - checkout
-      - run: npm install --save-dev jest
-      - run: npm install --save-dev babel-jest @babel/core @babel/preset-env
       - run: 
-          name: Python SimpleHttpServer
+          name: NPM config
           command: |
-            python3 --version
-            python3 -m http.server 8000
+            npm install --save-dev jest
+            npm install --save-dev babel-jest @babel/core @babel/preset-env
       - run:
           name: Run tests
           command: npm run test
