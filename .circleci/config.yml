@@ -10,7 +10,7 @@ jobs:
           name: Python SimpleHttpServer
           command: |
             python3 --version
-            python -m http.server 8000
+            python3 -m http.server 8000
       - run:
           name: Run tests
           command: npm run test
