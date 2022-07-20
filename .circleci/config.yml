@@ -9,7 +9,8 @@ jobs:
       - run: 
           name: Python SimpleHttpServer
           command: |
-            apt-get install python
+            sudo apt-get update
+            sudo apt-get install python
             python -m http.server 8000
       - run:
           name: Run tests
